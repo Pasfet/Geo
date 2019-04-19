@@ -161,6 +161,13 @@ body {
   padding-bottom: 40px;
 }
 
+.hero-arrow {
+  display: block;
+  margin: 60px auto;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .service-description {
   display: inline-block;
   max-width: 330px;
