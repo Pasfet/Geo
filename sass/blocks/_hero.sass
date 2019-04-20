@@ -12,6 +12,9 @@
     display: inline-block
     max-width: 330px
     margin-top: 80px
+  &-text
+    font-size: 14px
+    +reg
   &__button
     display: block
     margin-top: 40px
@@ -23,6 +26,11 @@
     justify-content: space-around
     max-width: 800px
     flex-wrap: wrap
+  &__serv
+    font-size: 20px
+    color: $but
+    +bold
+    padding-bottom: 10px
   &-card
     max-width: 364px
     position: relative
@@ -32,7 +40,24 @@
       position: absolute
       bottom: 20px
       left: 10px
+@media (max-width: 768px)  
+  .service 
+    &-text, &__button
+      display: none
+    &-description
+      margin-top: 0
+  .catalog
+    &-wrap
+      display: block
+      text-align: center
+@media (max-width: 376px) 
+  .catalog
+    &-card
+      padding-bottom: 10px
+      &__img
+        max-width: 300px
+      &__buttons
+        bottom: 30px
+      
 
-
-
-
+      

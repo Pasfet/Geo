@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Montserrat Regular';
   src: url("../fonts/Montserrat-Regular.eot");
@@ -49,12 +68,26 @@ body {
   font-family: 'Montserrat Bold', sans-serif;
 }
 
+@media (max-width: 768px) {
+  .button-o {
+    font-size: 12px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .button-all {
+    font-size: 8px;
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
   z-index: 99;
   top: 0;
   left: 0;
+  background-color: #fff;
 }
 
 .navbar-wrap {
@@ -200,6 +233,57 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1199px) {
+  .navbar__phone {
+    font-size: 12px;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav__location, .nav__loc {
+    display: none;
+  }
+  .navbar__mobile {
+    margin-left: -200px;
+  }
+  .logo {
+    margin-left: -150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    position: left;
+    margin-left: -110px;
+  }
+  .logo__text {
+    font-size: 14px;
+  }
+  .logo__description {
+    font-size: 7px;
+  }
+  .menu-button {
+    width: 50px;
+  }
+  .menu__line {
+    width: 25px;
+    margin: 2px 0;
+  }
+  .navbar__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+}
+
 .hero {
   background: #FBFBFE;
   padding-top: 140px;
@@ -217,6 +301,11 @@ body {
   display: inline-block;
   max-width: 330px;
   margin-top: 80px;
+}
+
+.service-text {
+  font-size: 14px;
+  font-family: 'Montserrat Regular', sans-serif;
 }
 
 .service__button {
@@ -241,6 +330,13 @@ body {
       flex-wrap: wrap;
 }
 
+.catalog__serv {
+  font-size: 20px;
+  color: #2D5C88;
+  font-family: 'Montserrat Bold', sans-serif;
+  padding-bottom: 10px;
+}
+
 .catalog-card {
   max-width: 364px;
   position: relative;
@@ -254,5 +350,30 @@ body {
   position: absolute;
   bottom: 20px;
   left: 10px;
+}
+
+@media (max-width: 768px) {
+  .service-text, .service__button {
+    display: none;
+  }
+  .service-description {
+    margin-top: 0;
+  }
+  .catalog-wrap {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .catalog-card {
+    padding-bottom: 10px;
+  }
+  .catalog-card__img {
+    max-width: 300px;
+  }
+  .catalog-card__buttons {
+    bottom: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

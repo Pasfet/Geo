@@ -4,6 +4,7 @@
   z-index: 99
   top: 0
   left: 0
+  background-color: #fff
   &-wrap
     display: flex
     align-items: center
@@ -43,8 +44,6 @@
     justify-content: space-around
     align-items: center
     margin-right: 100px
-   
-
   &__link
     text-decoration: none
     font-size: 14px
@@ -94,7 +93,41 @@
     +reg
     float: right
     text-align: center
+@media (max-width: 1199px)
+  .navbar
+    &__phone
+      font-size: 12px
+    &__button
+      font-size: 12px
+      padding: 10px 14px
+@media (max-width: 991px)
+  .nav
+    &__location, &__loc
+      display: none
+  .navbar
+    &__mobile
+     margin-left: -200px
+  .logo
+      margin-left: -150px
 
-
-
-         
+@media (max-width: 768px)     
+  .logo
+    position: left
+    margin-left: -110px
+    &__text
+      font-size: 14px
+    &__description
+      font-size: 7px
+  .menu
+    &-button
+      width: 50px
+    &__line 
+      width: 25px
+      margin: 2px 0
+  .navbar
+    &__mobile
+      display: none
+@media (max-width: 576px) 
+  .logo
+    display: none     
+      
