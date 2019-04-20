@@ -292,9 +292,9 @@ body {
 
 .hero-arrow {
   display: block;
-  margin: 60px auto;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: -15px;
 }
 
 .service-description {
@@ -338,7 +338,7 @@ body {
 }
 
 .catalog-card {
-  max-width: 364px;
+  max-width: 365px;
   position: relative;
 }
 
@@ -350,6 +350,10 @@ body {
   position: absolute;
   bottom: 20px;
   left: 10px;
+}
+
+.catalog-card__end {
+  bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -375,5 +379,42 @@ body {
   .catalog-card__buttons {
     bottom: 30px;
   }
+}
+
+.section-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Montserrat Regular', sans-serif;
+}
+
+.section-undtext {
+  font-size: 18px;
+  font-family: 'Montserrat Regular', sans-serif;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-top: 70px;
+  margin-right: -70px;
+  margin-bottom: 70px;
+}
+
+.about-wrap__last {
+  margin-right: -40px;
+}
+
+.about-wrap__text {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat Bold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

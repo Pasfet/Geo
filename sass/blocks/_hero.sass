@@ -4,8 +4,10 @@
   padding-bottom: 40px
   &-arrow
     display: block
-    margin: 60px auto
-    transform: rotate(-180deg)
+    text-align: center
+    margin-top: 60px
+    margin-bottom: -15px
+    
     
 .service     
   &-description
@@ -32,7 +34,7 @@
     +bold
     padding-bottom: 10px
   &-card
-    max-width: 364px
+    max-width: 365px
     position: relative
     &__img
       display: block
@@ -40,6 +42,8 @@
       position: absolute
       bottom: 20px
       left: 10px
+    &__end
+      bottom: 10px
 @media (max-width: 768px)  
   .service 
     &-text, &__button
