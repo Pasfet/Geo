@@ -417,4 +417,14 @@ body {
   font-size: 14px;
   font-family: 'Montserrat Bold', sans-serif;
 }
+
+@media (max-width: 425px) {
+  .about-wrap {
+    display: block;
+    margin-right: 0;
+  }
+  .about-wrap__item {
+    padding-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
