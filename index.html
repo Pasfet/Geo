@@ -157,8 +157,33 @@
     <container>
       <h2 class="section-title">Цены</h2>
       <!-- /.section-title -->
-      <p class="section-undtext">Для того, чтобы узнать цены на выполнение работ <br>заполните форму обратной связи <br>и мы свяжемся с вами!</p>
+      <p class="section-undtext price-text">Для того, чтобы узнать цены на выполнение работ <br>заполните форму обратной связи <br>и мы свяжемся с вами!</p>
       <!-- /.section-undtext -->
+      <div class="section-form">
+        <form action="process_form.php">
+          <ul class="flex-outer">
+            <li class="flex-one">
+              <label for="first-name">Ваше имя</label>
+              <input type="text" name="Name" id="first-name">
+            </li>
+            <li class="flex-two">
+              <label for="email">Ваш E-mail</label>
+              <input type="email" id="email">
+            </li>
+            <li class="flex-three">
+              <label for="phone">Ваш телефон</label>
+              <input type="tel" id="tel">
+            </li>
+            <li class="flex-four">
+              <label for="message">Ваш комментарий</label>
+              <textarea  id="message"  rows="1"></textarea>
+            </li>
+            <li class="flex-but">
+              <button class="button-o">Отправить</button>
+            </li>
+          </ul>
+        </form>
+      </div>
     </container>
   </section>
   <!-- /.price -->

@@ -427,4 +427,77 @@ body {
     padding-bottom: 10px;
   }
 }
+
+.price-text {
+  margin-bottom: 40px;
+}
+
+.flex-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer input, .flex-outer textarea, .flex-outer select {
+  width: 100%;
+  padding: 6px 0;
+  color: #999999;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+
+.flex-outer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-two {
+  margin-right: 55px;
+  margin-bottom: 20px;
+}
+
+.flex-four {
+  margin-right: 55px;
+}
+
+.flex-but {
+  max-width: 170px;
+  margin: 60px auto;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.flex-outer li {
+  width: 350px;
+}
+
+.flex-outer li label {
+  padding: 8px;
+  padding-left: 0;
+  font-family: 'Montserrat Bold', sans-serif;
+}
+
+.flex-outer input, .flex-outer textarea {
+  border: none;
+  border-bottom: 1px solid #707070;
+}
 /*# sourceMappingURL=style.css.map */
