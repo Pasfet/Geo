@@ -79,6 +79,16 @@ body {
   .button-all {
     font-size: 8px;
   }
+  .button-price {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .button-three {
+    font-size: 8px;
+    max-width: 198px;
+  }
 }
 
 .navbar {
@@ -273,13 +283,13 @@ body {
     width: 25px;
     margin: 2px 0;
   }
-  .navbar__mobile {
-    display: none;
-  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
   .logo {
+    display: none;
+  }
+  .navbar__mobile {
     display: none;
   }
 }
@@ -381,6 +391,15 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .catalog-card {
+    padding-bottom: 10px;
+  }
+  .catalog-card__img {
+    max-width: 250px;
+  }
+}
+
 .section-title {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -423,8 +442,24 @@ body {
     display: block;
     margin-right: 0;
   }
+  .about-wrap__image {
+    width: 100px;
+  }
+  .about-wrap__text {
+    font-size: 12px;
+    margin-left: 15px;
+  }
   .about-wrap__item {
     padding-bottom: 10px;
+  }
+  .section-undtext {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-undtext {
+    font-size: 12px;
   }
 }
 
@@ -499,5 +534,32 @@ body {
 .flex-outer input, .flex-outer textarea {
   border: none;
   border-bottom: 1px solid #707070;
+}
+
+@media (max-width: 768px) {
+  .section-form {
+    margin: 0 30px;
+  }
+  .flex-outer li {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .price-text {
+    font-size: 12px;
+  }
+  .flex-outer li {
+    width: 260px;
+  }
+}
+
+@media (max-width: 320px) {
+  .price-text {
+    font-size: 10px;
+  }
+  .flex-outer li {
+    width: 204px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
