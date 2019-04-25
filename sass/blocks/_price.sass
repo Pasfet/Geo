@@ -54,17 +54,25 @@
     margin-left: 172px
     li
       width: 300px
+@media (max-width: 425px)
+  .flex-outer
+    display: flex
+    margin-left: 50px
+    li
+      width: 200px
 @media (max-width: 375px)
   .price
     &-text  
       font-size: 12px
   .flex-outer
+    display: flex
+    margin-left: 0
     li
-      width: 260px
+      width: 200px
 @media (max-width: 320px)
   .price
     &-text  
       font-size: 10px
   .flex-outer
     li
-      width: 204px
+      width: 145px

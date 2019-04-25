@@ -571,12 +571,30 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .flex-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+  }
+  .flex-outer li {
+    width: 200px;
+  }
+}
+
 @media (max-width: 375px) {
   .price-text {
     font-size: 12px;
   }
+  .flex-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+  }
   .flex-outer li {
-    width: 260px;
+    width: 200px;
   }
 }
 
@@ -585,7 +603,7 @@ body {
     font-size: 10px;
   }
   .flex-outer li {
-    width: 204px;
+    width: 145px;
   }
 }
 
@@ -725,6 +743,13 @@ body {
   }
   .contact-mail__text {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-info {
+    position: static;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
