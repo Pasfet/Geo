@@ -36,12 +36,38 @@
   &-card
     max-width: 365px
     position: relative
+    transition: 1.2s
+    &:hover
+      .catalog-card__active
+        top: 0
+        background-color: rgba(255,255,255,0.9)
+        position: absolute
+        width: 359px
+        height: 140px
+        margin-top: 4px
+        margin-left: 5px
+        border-right: 1px solid #000
+        border-bottom: 1px solid #000   
+      .catalog-card__about
+        position: absolute
+        color: $text-color
+        bottom: 10px
+        left: 10px
+        font-size: 10px
+        line-height: 1.2
+        +bold
+        display: flex
+      .catalog-card__buttons
+        display: none 
     &__img
       display: block
     &__buttons
       position: absolute
       bottom: 20px
       left: 10px
+    &__about
+     display: none
+  
     &__end
       bottom: 10px
 @media (max-width: 768px)  

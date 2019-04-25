@@ -30,13 +30,15 @@
 
 .menu
   position: fixed
-  z-index: 0
+  z-index: 1
   top: 80px
   left: 0
   width: 100%
   padding: 15px 0
   transition: 0.2s
   transform: translateY(-300%)
+  background-color: #ffffff
+  opacity: 1
   &_active
     transform: translateY(0)
   &__nav
@@ -110,7 +112,10 @@
   .logo
       margin-left: -150px
 
-@media (max-width: 768px)     
+@media (max-width: 768px)  
+  .menu
+    &__nav
+      margin-right: 0
   .logo
     position: left
     margin-left: -110px
@@ -126,9 +131,13 @@
       margin: 2px 0
 
 @media (max-width: 425px) 
+  .menu 
+    &__nav
+      flex-direction: column
+    &__link
+      margin-bottom: 20px
   .logo
     display: none   
   .navbar
     &__mobile
       display: none  
-      
