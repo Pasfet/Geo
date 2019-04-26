@@ -7,6 +7,9 @@
     text-align: center
     margin-top: 60px
     margin-bottom: -15px
+    &__on
+      transform: rotate(180deg)
+      transition: 1s
     
     
 .service     
@@ -64,11 +67,15 @@
         margin-top: 1px
       .catalog-card__border
         display: flex
+    &__off
+      display: none
+    &__on
+      display: block
     &__img
       display: block
     &__buttons
       position: absolute
-      bottom: 20px
+      bottom: 32px
       left: 10px
     &__about
      display: none
@@ -89,6 +96,22 @@
   .catalog
     &-card
       padding-bottom: 10px
+      &:hover
+        .catalog-card__active
+          width: 297px
+          height: 120px
+          margin-top: -1px
+          margin-left: -3px
+          border: none
+        .catalog-card__about
+          bottom: 10px
+          left: 10px
+          font-size: 8px
+        .catalog-card__last
+          width: 300px
+          margin-left: -2px
+          margin-top: -1px
+
       &__img
         max-width: 300px
       &__buttons
@@ -99,5 +122,19 @@
       padding-bottom: 10px
       &__img
         max-width: 250px    
-
+      &:hover
+        .catalog-card__active
+          width: 250px
+          height: 105px
+          margin-top: -1px
+          margin-left: -3px
+          border: none
+        .catalog-card__about
+          bottom: 10px
+          left: 10px
+          font-size: 6px
+        .catalog-card__last
+          width: 300px
+          margin-left: -2px
+          margin-top: -1px
       

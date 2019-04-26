@@ -169,8 +169,8 @@ body {
   left: 0;
   width: 100%;
   padding: 15px 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
   background-color: #ffffff;
@@ -221,6 +221,14 @@ body {
   border-left: 1px solid #DFDDDD;
   height: 60px;
   width: 70px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
 }
 
 .menu-button__line {
@@ -343,6 +351,13 @@ body {
   margin-bottom: -15px;
 }
 
+.hero-arrow__on {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .service-description {
   display: inline-block;
   max-width: 330px;
@@ -430,13 +445,21 @@ body {
   display: flex;
 }
 
+.catalog-card__off {
+  display: none;
+}
+
+.catalog-card__on {
+  display: block;
+}
+
 .catalog-card__img {
   display: block;
 }
 
 .catalog-card__buttons {
   position: absolute;
-  bottom: 20px;
+  bottom: 32px;
   left: 10px;
 }
 
@@ -465,6 +488,23 @@ body {
   .catalog-card {
     padding-bottom: 10px;
   }
+  .catalog-card:hover .catalog-card__active {
+    width: 297px;
+    height: 120px;
+    margin-top: -1px;
+    margin-left: -3px;
+    border: none;
+  }
+  .catalog-card:hover .catalog-card__about {
+    bottom: 10px;
+    left: 10px;
+    font-size: 8px;
+  }
+  .catalog-card:hover .catalog-card__last {
+    width: 300px;
+    margin-left: -2px;
+    margin-top: -1px;
+  }
   .catalog-card__img {
     max-width: 300px;
   }
@@ -479,6 +519,23 @@ body {
   }
   .catalog-card__img {
     max-width: 250px;
+  }
+  .catalog-card:hover .catalog-card__active {
+    width: 250px;
+    height: 105px;
+    margin-top: -1px;
+    margin-left: -3px;
+    border: none;
+  }
+  .catalog-card:hover .catalog-card__about {
+    bottom: 10px;
+    left: 10px;
+    font-size: 6px;
+  }
+  .catalog-card:hover .catalog-card__last {
+    width: 300px;
+    margin-left: -2px;
+    margin-top: -1px;
   }
 }
 
@@ -683,7 +740,7 @@ body {
   background: #ffffff;
   width: 360px;
   height: 340px;
-  top: 1970px;
+  top: 1685px;
   left: 360px;
   border: 2px solid #707070;
 }
@@ -744,14 +801,14 @@ body {
 
 @media (max-width: 1440px) {
   .contact-info {
-    top: 1950px;
+    top: 1691px;
     left: 123px;
   }
 }
 
 @media (max-width: 1024px) {
   .contact-info {
-    top: 2580px;
+    top: 1993px;
     width: 298px;
     height: 297px;
     left: 49px;
@@ -781,10 +838,10 @@ body {
     margin-left: 5px;
   }
   .contact-info {
-    top: 2813px;
+    top: 2212px;
     width: 279px;
     height: 275px;
-    left: 49px;
+    left: 450px;
   }
   .contact__title {
     font-size: 18px;
@@ -809,7 +866,7 @@ body {
 @media (max-width: 425px) {
   .contact-info {
     position: static;
-    margin-bottom: 20px;
+    margin: 20px auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

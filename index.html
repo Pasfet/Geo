@@ -118,12 +118,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="catalog-card">
+                    <div class="catalog-card catalog-card__off catalog-card__in">
                       <img src="img/service/service-5.jpg" alt="" class="catalog-card__img">
                       <div class="catalog-card__buttons  catalog-card__border">
                         <button class="button-all">Выполнение кадастровой съемки</button></div>
                     </div>
-                    <div class="catalog-card">
+                    <div class="catalog-card catalog-card__off catalog-card__in">
                       <img src="img/service/service-6.jpg" alt="" class="catalog-card__img">
                       <div class="catalog-card__buttons">
                         <button class="button-all">Изготовление технического плана</button>
@@ -134,7 +134,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="catalog-card">
+                    <div class="catalog-card catalog-card__off catalog-card__in">
                       <img src="img/service/service-7.jpg" alt="" class="catalog-card__img">
                       <div class="catalog-card__buttons catalog-card__end">
                         <button class="button-all">Сопровождение документов</button>
@@ -147,7 +147,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="catalog-card">
+                    <div class="catalog-card catalog-card__off catalog-card__in">
                       <img src="img/service/service-8.jpg" alt="" class="catalog-card__img">
                       <div class="catalog-card__buttons catalog-card__end  catalog-card__border">
                         <button class="button-all">Изготовление карта-плана</button></div>
@@ -266,5 +266,25 @@
   </section>
   <!-- /.contacts -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=709"></script>
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    $('.menu-button').on('click', function(){
+      $('.menu').toggleClass('menu_active');
+    });
+    $('.hero-arrow__img').on('click', function(){
+      $('.catalog-card__off').toggleClass('catalog-card__on');
+    });
+    $('.hero-arrow__img').on('click', function(){
+      $('.hero-arrow').toggleClass('hero-arrow__on');
+    });
+    $('.service__button').on('click', function(){
+      $('.catalog-card__off').toggleClass('catalog-card__on');
+    });
+    $('.service__button').on('click', function(){
+      $('.hero-arrow').toggleClass('hero-arrow__on');
+    });
+    $('[type="tel"]').mask("+7 (999) 999-99-99")
+  </script>
 </body>
 </html>
