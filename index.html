@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="yandex-verification" content="327615bf32ef5acf" />
   <title>Топографические и кадастровые работы</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
   <header class="header">
@@ -200,23 +200,23 @@
       <p class="section-undtext price-text">Для того, чтобы узнать цены на выполнение работ <br>заполните форму обратной связи <br>и мы свяжемся с вами!</p>
       <!-- /.section-undtext -->
       <div class="section-form">
-        <form action="process_form.php">
+        <form action="send.php" method="POST">
           <ul class="flex-outer">
             <li class="flex-one">
-              <label for="first-name">Ваше имя</label>
-              <input type="text" name="Name" id="first-name">
+              <label for="name">Ваше имя</label>
+              <input type="text" name="name" required>
             </li>
             <li class="flex-two">
               <label for="email">Ваш E-mail</label>
-              <input type="email" id="email">
+              <input type="email" name="email" required>
             </li>
             <li class="flex-three">
-              <label for="phone">Ваш телефон</label>
-              <input type="tel" id="tel">
+              <label for="tel">Ваш телефон</label>
+              <input type="tel" name="tel" required>
             </li>
             <li class="flex-four">
               <label for="message">Ваш комментарий</label>
-              <textarea  id="message"  rows="1"></textarea>
+              <textarea name="message" rows="1"></textarea>
             </li>
             <li class="flex-but">
               <button class="button-o button-price">Отправить</button>
@@ -233,7 +233,7 @@
       <!-- /.section-title -->
     </div>
     <!-- /.container -->
-    <div class="map" id="map">
+    <div class="map" >
       <div class="contacts">
         <div class="container contact-wrap">
           <div class="contact-info">
@@ -259,8 +259,9 @@
             </div>
             <!-- /.contact-info -->
           </div>
-          <script type="text/javascript" charset="utf-8" async 
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acec129fcbd89c1f34ea9c8b4796058021e79139eb3168ac1e0934bdc760cf0c6&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+         <div class="maps" id="map">
+
+         </div>
         </div>    
     </div>
   </section>
@@ -268,23 +269,6 @@
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=709"></script>
   <script src="js/jquery-3.4.0.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
-  <script>
-    $('.menu-button').on('click', function(){
-      $('.menu').toggleClass('menu_active');
-    });
-    $('.hero-arrow__img').on('click', function(){
-      $('.catalog-card__off').toggleClass('catalog-card__on');
-    });
-    $('.hero-arrow__img').on('click', function(){
-      $('.hero-arrow').toggleClass('hero-arrow__on');
-    });
-    $('.service__button').on('click', function(){
-      $('.catalog-card__off').toggleClass('catalog-card__on');
-    });
-    $('.service__button').on('click', function(){
-      $('.hero-arrow').toggleClass('hero-arrow__on');
-    });
-    $('[type="tel"]').mask("+7 (999) 999-99-99")
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
