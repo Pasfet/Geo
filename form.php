@@ -2,26 +2,24 @@
 if(isset($_POST['submit'])){
     /* Устанавливаем e-mail Кому и от Кого будут приходить письма */   
     $to = "i@u53335.onhh.ru"; // Здесь нужно написать e-mail, куда будут приходить письма   
-    $from = $_POST['email'];
+    $from = $_POST['email-one'];
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$tel = $_POST['tel'];
-$message = $_POST['message'];
+$name = $_POST['name-one'];
+$email = $_POST['email-one'];
+$tel = $_POST['tel-one'];
 $subject = "Форма отправки сообщений с сайта geoskyspb";
 
 
-$mail_to_myemail = "Здравствуйте! 
+$mail_to = "Здравствуйте! 
 Было отправлено сообщение с сайта! 
 Имя отправителя: $name
 E-mail: $email
-Номер телефона: $tel
-Текст сообщения: $message";
+Номер телефона: $tel";
 
 $headers = "From:" . $from;
 $headers2 = "From:" . $to;
 
-mail($to,$subject,$mail_to_myemail,$headers);
+mail($to,$subject,$mail_to,$headers);
 // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
 echo "Сообщение отправлено. Спасибо Вам " . $name . ", мы скоро свяжемся с Вами.";
 echo "<br /><br /><a href='http://u53335.onhh.ru/'>Вернуться на сайт.</a>";

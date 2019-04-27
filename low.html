@@ -56,6 +56,39 @@
        <!-- /.navbar-wrap --> 
       </div>
       <!-- /.container -->
+      <div class="okno ">
+        <span class="okno__close"><img src="img/okno/close.png" alt=""></span>
+       <div class="okno-text">
+         <h2 class="okno-text__title">Заказать звонок</h2>
+         <span class="okno-text__undtext">Представтесь, мы вам перезвоним</span>
+       </div>
+       <form action="form.php" method="POST">
+         <ul class="flex-okno">
+           <li>
+             <label for="name">Ваше имя</label>
+             <input type="text" name="name-one" required>
+           </li>
+           <li>
+             <label for="email">Ваш E-mail</label>
+             <input type="email" name="email-one" required>
+           </li>
+           <li>
+             <label for="tel">Ваш телефон</label>
+             <input type="tel" name="tel-one" required>
+           </li>
+           <div class="btn-group__toggle" data-toggle="buttons">
+             <label class="btn btn-primary">
+               <input type="checkbox" required> <a href="#">Я согласен на обработку персональных данных</a>
+             </label>
+           </div>
+           <li class="flex-last">
+             <button name="submit" class="button-o button-okno">Отправить</button>
+           </li>
+         </ul>
+       </form>
+       <!-- /.okno-text -->
+     </div>
+     <div class="overlay"></div>
     </div>
     <header>
       <div class="container">
