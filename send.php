@@ -1,37 +1,29 @@
-<?php
+<?php 
+if(isset($_POST['submit'])){
+    /* Устанавливаем e-mail Кому и от Кого будут приходить письма */   
+    $to = "snake_99@list.ru"; // Здесь нужно написать e-mail, куда будут приходить письма   
+    $from = $_POST['email'];
 
-/* Задаем переменные */
-$name = htmlspecialchars($_POST["name"]);
-$email = htmlspecialchars($_POST["email"]);
-$tel = htmlspecialchars($_POST["tel"]);
-$message = htmlspecialchars($_POST["message"]);
-$bezspama = htmlspecialchars($_POST["bezspama"]);
-
-/* Ваш адрес и тема сообщения */
-$address = "snake_99@list.ru";
-/* Формат письма */
-$mes = "Сообщение с сайта www.geoskyspb.ru\n
-Имя отправителя: $name 
-Электронный адрес отправителя: $email
-Телефон отправителя: $tel
-Текст сообщения:
-$message";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$tel = $_POST['tel'];
+$message = $_POST['message'];
+$subject = "Форма отправки сообщений с сайта geoskyspb";
 
 
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
-{
-/* Отправляем сообщение, используя mail() функцию */
-$from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
-if (mail($address, $mes, $from)) {
-    header('Refresh: 5; URL=http://u53303.onhh.ru');
-    echo '
-    
-    Письмо отправлено, через 5 секунд вы вернетесь на страницу ';}
-else {
-    header('Refresh: 5; URL=http://u53303.onhh.ru');
-    echo '
-    
-    Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY';}
+$mail_to_myemail = "Здравствуйте! 
+Было отправлено сообщение с сайта! 
+Имя отправителя: $name
+E-mail: $email
+Номер телефона: $tel
+Текст сообщения: $message";
+
+$headers = "From:" . $from;
+$headers2 = "From:" . $to;
+
+mail($to,$subject,$mail_to_myemail,$headers);
+// mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
+echo "Сообщение отправлено. Спасибо Вам " . $name . ", мы скоро свяжемся с Вами.";
+echo "<br /><br /><a href='http://u53303.onhh.ru/'>Вернуться на сайт.</a>";
 }
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
 ?>
