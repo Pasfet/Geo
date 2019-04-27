@@ -27,3 +27,8 @@ echo "Сообщение отправлено. Спасибо Вам " . $name .
 echo "<br /><br /><a href='http://u53303.onhh.ru/'>Вернуться на сайт.</a>";
 }
 ?>
+<!--Переадресация на главную страницу сайта, через 3 секунды-->
+<script language="JavaScript" type="text/javascript">
+function changeurl(){eval(self.location="http://u53303.onhh.ru/");}
+window.setTimeout("changeurl();",3000);
+</script>
