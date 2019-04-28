@@ -545,13 +545,6 @@ body {
   margin: 35px 38px;
 }
 
-.btn-group__toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 214px;
-}
-
 .overlay {
   z-index: 0;
   position: fixed;
