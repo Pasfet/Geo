@@ -669,15 +669,15 @@ body {
   padding: 15px 0;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  -webkit-transform: translateY(-300%);
-          transform: translateY(-300%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   background-color: #ffffff;
   opacity: 1;
 }
 
 .menu_active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
 }
 
 .menu__nav {
@@ -757,7 +757,7 @@ body {
 
 .logo__description {
   display: block;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   font-family: 'Montserrat Regular', sans-serif;
   color: #000;
@@ -771,14 +771,20 @@ body {
 }
 
 .nav__loc {
-  font-size: 10px;
-  width: 110px;
+  font-size: 11px;
+  width: 118px;
   font-family: 'Montserrat Regular', sans-serif;
   float: right;
   text-align: center;
 }
 
 @media (max-width: 1199px) {
+  .logo__description {
+    font-size: 9px;
+  }
+  .logo__loc {
+    font-size: 10px;
+  }
   .navbar__phone {
     font-size: 12px;
   }
@@ -812,7 +818,8 @@ body {
     font-size: 14px;
   }
   .logo__description {
-    font-size: 7px;
+    font-size: 8px;
+    line-height: 12px;
   }
   .menu-button {
     width: 50px;
@@ -824,11 +831,19 @@ body {
 }
 
 @media (max-width: 425px) {
+  .menu {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
   .menu__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .menu_active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .menu__link {
     margin-bottom: 20px;
@@ -1071,6 +1086,14 @@ body {
 
 .about-wrap__last {
   margin-right: -40px;
+}
+
+.about-wrap__image {
+  width: 100px;
+}
+
+.about-wrap__first {
+  margin-right: 13px;
 }
 
 .about-wrap__text {

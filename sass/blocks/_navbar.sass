@@ -36,11 +36,11 @@
   width: 100%
   padding: 15px 0
   transition: 0.1s
-  transform: translateY(-300%)
+  transform: translateY(0)
   background-color: #ffffff
   opacity: 1
   &_active
-    transform: translateY(0)
+    transform: translateY(-300%)
   &__nav
     display: flex
     justify-content: space-around
@@ -85,7 +85,7 @@
     text-align: center
   &__description
     display: block
-    font-size: 9px
+    font-size: 10px
     text-transform: uppercase
     +reg
     color: #000
@@ -96,12 +96,17 @@
     height: 12px
     margin-right: 5px
   &__loc
-    font-size: 10px
-    width: 110px
+    font-size: 11px
+    width: 118px
     +reg
     float: right
     text-align: center
 @media (max-width: 1199px)
+  .logo
+    &__description
+      font-size: 9px
+    &__loc
+      font-size: 10px
   .navbar
     &__phone
       font-size: 12px
@@ -128,7 +133,8 @@
     &__text
       font-size: 14px
     &__description
-      font-size: 7px
+      font-size: 8px
+      line-height: 12px
   .menu
     &-button
       width: 50px
@@ -138,8 +144,12 @@
 
 @media (max-width: 425px) 
   .menu 
+    transform: translateY(-300%)
     &__nav
       flex-direction: column
+      
+    &_active
+      transform: translateY(0)
     &__link
       margin-bottom: 20px
   .logo
