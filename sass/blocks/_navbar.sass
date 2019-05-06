@@ -36,11 +36,11 @@
   width: 100%
   padding: 15px 0
   transition: 0.1s
-  transform: translateY(-300%)
+  transform: translateY(0%)
   background-color: #ffffff
   opacity: 1
   &_active
-    transform: translateY(0)
+    transform: translateY(-300%)
   &__nav
     display: flex
     justify-content: space-around
@@ -120,8 +120,11 @@
 
 @media (max-width: 768px)  
   .menu
+    transform: translateY(-300%)
     &__nav
       margin-right: 0
+    &_active
+      transform: translateY(0)
   .logo
     position: left
     margin-left: -110px
