@@ -417,6 +417,10 @@ body {
   text-decoration: none;
 }
 
+.button-o:hover {
+  cursor: pointer;
+}
+
 .button-all {
   padding: 8px;
   color: #000000;
@@ -436,10 +440,24 @@ body {
   padding: 15px 16px;
 }
 
+.button-cont {
+  margin-left: 12%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .button-cont {
+    margin-left: 4%;
+  }
+}
+
 @media (max-width: 768px) {
   .button-o {
     font-size: 12px;
     padding: 12px 14px;
+  }
+  .button-cont {
+    margin-left: 1%;
   }
 }
 
@@ -869,6 +887,10 @@ body {
   margin-bottom: -15px;
 }
 
+.hero-arrow:hover {
+  cursor: pointer;
+}
+
 .hero-arrow__on {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -892,10 +914,39 @@ body {
   margin-top: 40px;
 }
 
+.service-table {
+  display: none;
+  margin: 0 auto;
+}
+
+.service-table__on {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.table {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 12px;
+}
+
+.table__link {
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+
+.table__link__last {
+  border-bottom: none;
+}
+
 .catalog-wrap {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog-block {
@@ -987,6 +1038,13 @@ body {
 
 .catalog-card__end {
   bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .catalog-wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1250,6 +1308,10 @@ body {
   }
 }
 
+.contact-wrap {
+  position: relative;
+}
+
 .contact-wrapper {
   margin-top: 20px;
   margin-left: 20px;
@@ -1266,7 +1328,7 @@ body {
   background: #ffffff;
   width: 360px;
   height: 340px;
-  top: 1685px;
+  top: 70px;
   left: 360px;
   border: 2px solid #707070;
 }
@@ -1325,16 +1387,28 @@ body {
   font-size: 14px;
 }
 
+.contact-table {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.contact-table__req {
+  text-align: center;
+}
+
+.contact-table__link {
+  padding: 10px;
+}
+
 @media (max-width: 1440px) {
   .contact-info {
-    top: 1691px;
     left: 123px;
   }
 }
 
 @media (max-width: 1024px) {
   .contact-info {
-    top: 1993px;
     width: 298px;
     height: 297px;
     left: 49px;
@@ -1364,10 +1438,9 @@ body {
     margin-left: 5px;
   }
   .contact-info {
-    top: 2212px;
     width: 279px;
     height: 275px;
-    left: 450px;
+    left: 49px;
   }
   .contact__title {
     font-size: 18px;

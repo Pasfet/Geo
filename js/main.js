@@ -26,7 +26,13 @@ $('.hero-arrow__img').on('click', function(){
   $('.catalog-card__off').toggleClass('catalog-card__on');
 });
 $('.hero-arrow__img').on('click', function(){
+  $('.service-table').toggleClass('service-table__on');
+});
+$('.hero-arrow__img').on('click', function(){
   $('.hero-arrow').toggleClass('hero-arrow__on');
+});
+$('.service__button').on('click', function(){
+  $('.service-table').toggleClass('service-table__on');
 });
 $('.service__button').on('click', function(){
   $('.catalog-card__off').toggleClass('catalog-card__on');
@@ -46,3 +52,4 @@ $(window).bind('scroll', function(){
     $(window).unbind('scroll')
   }
 });
+
