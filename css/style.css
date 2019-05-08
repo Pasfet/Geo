@@ -763,6 +763,10 @@ body {
 .logo {
   margin-left: -100px;
 }
+.logo-link {
+  text-decoration: none;
+  color: #000000;
+}
 
 .logo__text {
   display: block;
