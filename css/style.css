@@ -433,7 +433,6 @@ body {
 
 .button-price {
   padding: 10px 41px;
-  border-radius: 15px;
 }
 
 .button-contact {
@@ -559,7 +558,11 @@ body {
   font-family: 'Montserrat Regular', sans-serif;
 }
 
-.flex-okno {
+.okno-last {
+  margin: 15% 7%;
+}
+
+.okno-okno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,20 +578,20 @@ body {
   margin-left: 25px;
 }
 
-.flex-okno input {
+.okno-okno input {
   padding: 6px 0;
   color: #999999;
   outline: none;
 }
 
-.flex-okno a {
+.okno-okno a {
   text-decoration: none;
   color: #000000;
   font-size: 12px;
   font-family: 'Montserrat Regular', sans-serif;
 }
 
-.flex-okno li {
+.okno-okno li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,10 +601,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
-}
-
-.flex-last {
-  margin: 35px 38px;
 }
 
 .overlay {
@@ -719,6 +718,11 @@ body {
   font-size: 12px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .menu {
   position: fixed;
   z-index: 1;
@@ -803,11 +807,6 @@ body {
 
 .logo {
   margin-left: -100px;
-}
-
-.logo-link {
-  text-decoration: none;
-  color: #000000;
 }
 
 .logo__text {
@@ -1431,74 +1430,6 @@ body {
 .contact-table__link {
   padding: 10px;
 }
-
-.low {
-  display: block;
-  margin: 100px auto;
-}
-
-.low-title {
-  text-align: center;
-  margin: 50px;
-  padding-top: 50px;
-  font-family: 'Montserrat Bold', sans-serif;
-}
-
-.low-image {
-  width: 45%;
-  margin: 15px 28px;
-  padding: 10px 15px;
-}
-@media (max-width: 1024px) {
-    .low-image {
-        margin: 15px 15px;
-        padding: 5px 9px;
-    }
-}
-
-@media (max-width: 768px) {
-    .low-wrap {
-        display: grid;
-    }
-    .low-image {
-        display: flex;
-        width: 60%;
-        margin: 50px auto;
-        
-    }
-}
-
-@media (max-width: 425px) {
-  .low-wrap {
-    display: block;
-    text-align: center;
-  }
-  .low-wrap-title {
-    margin-bottom: 25px;
-  }
-  .low-wrap-image {
-    width: 360px;
-  }
-  .low-image {
-        display: flex;
-        width: 95%;
-        margin: 50px auto;
-        
-    }
-}
-
-@media (max-width: 375px) {
-  .low-image {
-    width: 300px;
-  }
-}
-
-@media (max-width: 320px) {
-  .low-image {
-    width: 250px;
-  }
-}
-
 
 @media (max-width: 1440px) {
   .contact-info {
