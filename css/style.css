@@ -711,6 +711,10 @@ body {
   color: #000000;
 }
 
+.navbar__phone:hover {
+  color: #2D5C88;
+}
+
 .navbar__work-time {
   display: block;
   text-align: right;
@@ -1400,6 +1404,10 @@ body {
   color: #000000;
 }
 
+.contact-phone__numb:hover {
+  color: #2D5C88;
+}
+
 .contact-work {
   display: block;
   text-align: left;
@@ -1419,6 +1427,10 @@ body {
   float: right;
   color: #000000;
   font-size: 14px;
+}
+
+.contact-mail__text:hover {
+  color: #2D5C88;
 }
 
 .contact-table {
