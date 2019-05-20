@@ -822,6 +822,10 @@ body {
   text-align: center;
 }
 
+.logo__text:hover {
+  color: #2D5C88;
+}
+
 .logo__description {
   display: block;
   font-size: 9px;
