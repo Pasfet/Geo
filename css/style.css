@@ -698,6 +698,12 @@ body {
 .navbar__mess {
   width: 12px;
   height: 12px;
+  float: left;
+  margin-top: 2px;
+}
+
+.navbar__mess__vib {
+  margin-right: 5px;
 }
 
 .navbar__mobile {
@@ -720,6 +726,25 @@ body {
   text-align: right;
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 12px;
+}
+
+.navbar-li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.navbar-subli {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
 }
 
 .logo-link {
@@ -1370,7 +1395,7 @@ body {
   background: #ffffff;
   width: 360px;
   height: 340px;
-  top: 70px;
+  top: 57px;
   left: 360px;
   border: 2px solid #707070;
 }
@@ -1402,7 +1427,6 @@ body {
 .contact-phone__numb {
   text-decoration: none;
   float: right;
-  margin-left: 5px;
   font-family: 'Montserrat Bold', sans-serif;
   font-size: 14px;
   color: #000000;
@@ -1415,7 +1439,6 @@ body {
 .contact-work {
   display: block;
   text-align: left;
-  margin-left: 22px;
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 12px;
 }

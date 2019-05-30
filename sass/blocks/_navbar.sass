@@ -15,6 +15,10 @@
   &__mess
     width: 12px
     height: 12px
+    float: left
+    margin-top: 2px
+    &__vib
+      margin-right: 5px
   &__mobile
     margin-right: -120px
   &__phone
@@ -29,6 +33,21 @@
     text-align: right
     +reg
     font-size: 12px
+  &-li 
+    display: inline-block
+    position: relative
+    list-style: none
+    margin: 0
+    padding: 0 5px
+    padding-bottom: 5px
+    vertical-align: middle
+  &-subli
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    z-index: 10
+    background: #fff
 .logo-link
   text-decoration: none
   color: #000000

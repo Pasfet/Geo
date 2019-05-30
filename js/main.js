@@ -1,3 +1,9 @@
+$(".navbar-li li ul").hide();
+$(".navbar-li li:has('.navbar-subli')").hover(
+	function(){
+		$(".navbar-li li ul").stop().fadeToggle(300);
+	}
+);
 $(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
 	$('.navbar__button, .button-contact').click( function(event){ // лoвим клик 
 		event.preventDefault(); // выключaем стaндaртную рoль элементa
