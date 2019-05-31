@@ -1,3 +1,26 @@
+$(function() {
+	$(window).on('load', function() {
+		$(".catalog-wrap").addClass("bounceIn");
+	});
+	$(window).scroll(function() {
+		$(".about-wrap").each(function() {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 700) {
+				$(this).addClass("shake");
+			}
+		});
+	});
+	$(window).scroll(function() {
+		$(".button-price").each(function() {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 900) {
+				$(this).addClass("fadeInRight");
+			}
+		});
+	});
+});
 $(".navbar-li li ul").hide();
 $(".navbar-li li:has('.navbar-subli')").hover(
 	function(){
@@ -58,4 +81,5 @@ $(window).bind('scroll', function(){
     $(window).unbind('scroll')
   }
 });
+
 
