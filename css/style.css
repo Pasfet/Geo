@@ -669,6 +669,12 @@ body {
   max-width: 214px;
 }
 
+@media (max-width: 768px) {
+  .okno-last {
+    margin: 40px 50px;
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
