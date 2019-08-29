@@ -1479,6 +1479,31 @@ body {
 .contact-table__link {
   padding: 10px;
 }
+/*POLICY*/
+.policy-wrap {
+  padding-top: 150px;
+}
+.policy-title {
+  font-size: 20px;
+}
+.policy__ol {
+  margin-bottom: 20px;
+}
+.policy-ol__spi {
+  margin-top: 10px;
+}
+.policy-ul__desc {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.form-span {
+  font-size: 12px;
+  margin: 30px auto;
+}
+
+
+
+
 
 @media (max-width: 1440px) {
   .contact-info {
